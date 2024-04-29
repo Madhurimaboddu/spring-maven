@@ -1,0 +1,30 @@
+<!DOCTTYPE html>
+
+<html xmlns:th="http://www.springframework.org/schema/lang">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+</head>
+<body>
+<h1>User Profile</h1>
+<form>
+    <div>
+        <p>usrName: <span th:text="*{usrName}"></span></p>
+        <input type="text" name="usrName">
+    </div>
+    <div>
+        <p>userId: <span th:text="*{userId}"></span></p>
+        <input TYPE="number" name="userId">
+    </div>
+    <div>
+        <p>email: <span th:text="*{email}"></span></p>
+        <input type="text" name="email">
+    </div>
+    <div>
+        <p>DOB: <span th:text="*{DOB}"></span></p>
+        <input type="text" name="DOB">
+    </div>
+    <button>Submit</button>
+</form>
+</body>
+</html>
