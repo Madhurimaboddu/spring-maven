@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.*;
 import java.lang.*;
 
-@Controller
+@RestController
 @RequestMapping("user/")
 public class UserController {
     @Autowired
@@ -24,14 +24,12 @@ public class UserController {
 
     }
 
-
-
-
-    @GetMapping("add-user")
+    @PostMapping("add-user")
     public  String addUser(@RequestBody User user){
         userServices.addUser(user);
         return "index.html";
     }
+
     @DeleteMapping("delete-by-id/{userId}")
     public  String deleteUserById(@PathVariable int userId){
         userServices.deleteUserById(userId);
