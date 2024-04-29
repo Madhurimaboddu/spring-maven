@@ -1,1 +1,1 @@
-# spring-maven
+# spring boot project using Maven tool and Rest api's in java web application 
